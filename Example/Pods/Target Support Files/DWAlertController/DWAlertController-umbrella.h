@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "DWAlertAction.h"
+#import "DWAlertController.h"
 
 FOUNDATION_EXPORT double DWAlertControllerVersionNumber;
 FOUNDATION_EXPORT const unsigned char DWAlertControllerVersionString[];

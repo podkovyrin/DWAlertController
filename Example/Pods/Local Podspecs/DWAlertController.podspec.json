@@ -1,9 +1,10 @@
 {
   "name": "DWAlertController",
   "version": "0.1.0",
-  "summary": "A short description of DWAlertController.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Andrew Podkovyrin/DWAlertController",
+  "summary": "A UIAlertController reimplementation with controller containment support.",
+  "description": "DWAlertController is an UIAlertController that supports displaying any view controller instead of title and message.\nDWAlertController fully copies the look and feel of UIAlertController and has the same API.\nSupported features: iPhone / iPad compatible, Dynamic Type, Accessibility, rotation, tinting action buttons and many more.",
+  "homepage": "https://github.com/podkovyrin/DWAlertController",
+  "screenshots": "https://raw.githubusercontent.com/podkovyrin/DWAlertController/blob/master/assets/DWAlertController_Screens.png",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +13,14 @@
     "Andrew Podkovyrin": "podkovyrin@gmail.com"
   },
   "source": {
-    "git": "https://github.com/Andrew Podkovyrin/DWAlertController.git",
+    "git": "https://github.com/podkovyrin/DWAlertController.git",
     "tag": "0.1.0"
   },
+  "social_media_url": "https://twitter.com/podkovyr",
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
-  "source_files": "DWAlertController/Classes/**/*"
+  "source_files": "DWAlertController/**/*",
+  "public_header_files": "DWAlertController/*.h",
+  "frameworks": "UIKit"
 }

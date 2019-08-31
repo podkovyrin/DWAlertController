@@ -1,42 +1,23 @@
-#
-# Be sure to run `pod lib lint DWAlertController.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'DWAlertController'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of DWAlertController.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'A UIAlertController reimplementation with controller containment support.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  DWAlertController is an UIAlertController that supports displaying any view controller instead of title and message.
+  DWAlertController fully copies the look and feel of UIAlertController and has the same API.
+  Supported features: iPhone / iPad compatible, Dynamic Type, Accessibility, rotation, tinting action buttons and many more.
                        DESC
 
-  s.homepage         = 'https://github.com/Andrew Podkovyrin/DWAlertController'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/podkovyrin/DWAlertController'
+  s.screenshots     = 'https://raw.githubusercontent.com/podkovyrin/DWAlertController/blob/master/assets/DWAlertController_Screens.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Andrew Podkovyrin' => 'podkovyrin@gmail.com' }
-  s.source           = { :git => 'https://github.com/Andrew Podkovyrin/DWAlertController.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/podkovyrin/DWAlertController.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/podkovyr'
 
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'DWAlertController/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'DWAlertController' => ['DWAlertController/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.ios.deployment_target = '9.0'
+  s.source_files = 'DWAlertController/**/*'
+  s.public_header_files = 'DWAlertController/*.h'
+  s.frameworks = 'UIKit'
 end
