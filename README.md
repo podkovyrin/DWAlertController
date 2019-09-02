@@ -2,6 +2,7 @@
 
 [![CI Status](https://img.shields.io/travis/podkovyrin/DWAlertController.svg?style=flat)](https://travis-ci.org/podkovyrin/DWAlertController)
 [![Version](https://img.shields.io/cocoapods/v/DWAlertController.svg?style=flat)](https://cocoapods.org/pods/DWAlertController)
+[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/DWAlertController.svg?style=flat)](https://cocoapods.org/pods/DWAlertController)
 [![Platform](https://img.shields.io/cocoapods/p/DWAlertController.svg?style=flat)](https://cocoapods.org/pods/DWAlertController)
 
@@ -74,7 +75,7 @@ The `backgroundColor` of the content controller's view should be transparent (`U
 
 - Only `UIAlertController.Style.alert` is supported (since there are a lot of decent implementations of actionSheet-styled controls)
 - Updating the height of the currently displaying view controller is not supported. However, when displaying a new controller with `performTransition(toContentController:animated:)` method, it may have a different height.
-- iOS 13 Dark Mode support is not currently supported (WIP).
+- iOS 13 Dark Mode is not currently supported (WIP).
 
 ## Requirements
 

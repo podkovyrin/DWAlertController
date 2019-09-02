@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
   s.homepage         = 'https://github.com/podkovyrin/DWAlertController'
   s.screenshots     = 'https://github.com/podkovyrin/DWAlertController/raw/master/assets/DWAlertController_Screens.png?raw=true'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = 'MIT'
   s.author           = { 'Andrew Podkovyrin' => 'podkovyrin@gmail.com' }
   s.source           = { :git => 'https://github.com/podkovyrin/DWAlertController.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/podkovyr'
