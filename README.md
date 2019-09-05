@@ -23,6 +23,7 @@ This alert successfully used in production in our app [Dash Wallet](https://apps
 - Device rotations
 - Keyboard support
 - Customizable action buttons (normal / disabled / destructive tint colors)
+- Tap and slide over the action buttons
 - Custom presentation and dismissal transitions (corresponds to `UIAlertController` ones)
 - Dimming tintColor-ed views behind the alert
 - Simple built-in transition from one content controller to another within a single `DWAlertController` (see Advanced alert in the Example app)
