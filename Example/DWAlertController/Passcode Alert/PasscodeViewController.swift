@@ -35,7 +35,11 @@ class PasscodeViewController: UIViewController {
             titleLabel.adjustsFontForContentSizeCategory = true
         }
         titleLabel.numberOfLines = 0
-        titleLabel.textColor = .black
+        if #available(iOS 13.0, *) {
+            titleLabel.textColor = .label
+        } else {
+            titleLabel.textColor = .black
+        }
         titleLabel.text = NSLocalizedString("Enter passcode", comment: "")
         
         pinField.translatesAutoresizingMaskIntoConstraints = false

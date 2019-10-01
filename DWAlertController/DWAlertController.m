@@ -37,6 +37,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, strong, nonatomic) __kindof UIViewController *contentController;
 @property (copy, nonatomic) NSArray<DWAlertAction *> *actions;
 
+@property (nullable, nonatomic, weak) DWAlertPresentationController *alertPresentationController;
+
 // hides warning
 + (instancetype)appearanceWhenContainedIn:(nullable Class<UIAppearanceContainer>)ContainerClass, ... __attribute__((deprecated));
 + (instancetype)appearanceForTraitCollection:(UITraitCollection *)trait
@@ -198,6 +200,15 @@ NS_ASSUME_NONNULL_BEGIN
     self.alertView.preferredAction = preferredAction;
 }
 
+- (DWAlertAppearanceMode)appearanceMode {
+    return self.alertView.appearanceMode;
+}
+
+- (void)setAppearanceMode:(DWAlertAppearanceMode)appearanceMode {
+    self.alertView.appearanceMode = appearanceMode;
+    self.alertPresentationController.appearanceMode = appearanceMode;
+}
+
 - (void)setNormalTintColor:(UIColor *)normalTintColor {
     _normalTintColor = normalTintColor;
     self.alertView.normalTintColor = normalTintColor;
@@ -242,6 +253,7 @@ NS_ASSUME_NONNULL_BEGIN
                                                                presentingViewController:(nullable UIViewController *)presenting
                                                                    sourceViewController:(UIViewController *)source {
     DWAlertPresentationController *presentationController = [[DWAlertPresentationController alloc] initWithPresentedViewController:presented presentingViewController:presenting];
+    self.alertPresentationController = presentationController;
     return presentationController;
 }
 

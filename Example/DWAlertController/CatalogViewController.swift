@@ -32,6 +32,8 @@ class CatalogViewController: UITableViewController {
         case longText = 4
         case advanced = 5
         case tinted = 6
+        case alwaysLight = 7
+        case alwaysDark = 8
     }
     
     override func viewDidLoad() {
@@ -65,6 +67,10 @@ class CatalogViewController: UITableViewController {
             showAdvancedAlert()
         case .tinted:
             showTintedAlert()
+        case .alwaysLight:
+            showAlwaysLightAlert()
+        case .alwaysDark:
+            showAlwaysDarkAlert()
         }
     }
     
@@ -186,6 +192,42 @@ class CatalogViewController: UITableViewController {
                                          handler: nil)
         cancelAction.isEnabled = false;
         alert.addAction(cancelAction)
+        
+        present(alert, animated: true)
+    }
+    
+    private func showAlwaysLightAlert() {
+        let controller = TitleMessageViewController(title: alertTitle,
+                                                    message: "Alert with always light appearance ☀️")
+        if #available(iOS 13.0, *) {
+            controller.overrideUserInterfaceStyle = .light
+        }
+        let alert = DWAlertController(contentController: controller)
+        alert.appearanceMode = .light
+        
+        let okAction = DWAlertAction(title: NSLocalizedString("OK", comment: ""),
+                                     style: .default,
+                                     handler: nil)
+        alert.addAction(okAction)
+        alert.preferredAction = okAction
+        
+        present(alert, animated: true)
+    }
+    
+    private func showAlwaysDarkAlert() {
+        let controller = TitleMessageViewController(title: alertTitle,
+                                                    message: "Alert with always dark appearance 🌑")
+        if #available(iOS 13.0, *) {
+            controller.overrideUserInterfaceStyle = .dark
+        }
+        let alert = DWAlertController(contentController: controller)
+        alert.appearanceMode = .dark
+        
+        let okAction = DWAlertAction(title: NSLocalizedString("OK", comment: ""),
+                                     style: .default,
+                                     handler: nil)
+        alert.addAction(okAction)
+        alert.preferredAction = okAction
         
         present(alert, animated: true)
     }

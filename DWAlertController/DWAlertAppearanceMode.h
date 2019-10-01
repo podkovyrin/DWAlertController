@@ -1,6 +1,6 @@
 //
 //  Created by Andrew Podkovyrin
-//  Copyright © 2018 Dash Core Group. All rights reserved.
+//  Copyright © 2019 Dash Core Group. All rights reserved.
 //
 //  Licensed under the MIT License (the "License");
 //  you may not use this file except in compliance with the License.
@@ -15,22 +15,16 @@
 //  limitations under the License.
 //
 
-#import <UIKit/UIKit.h>
+#ifndef DWAlertAppearanceMode_h
+#define DWAlertAppearanceMode_h
 
-#import "DWDimmingView.h"
-#import "DWAlertAppearanceMode.h"
+typedef NS_ENUM (NSInteger, DWAlertAppearanceMode) {
+    /// Follows Dark Mode setting on iOS 13, uses the light appearance mode on iOS 12 or lower
+    DWAlertAppearanceModeAutomatic,
+    /// The light appearance mode
+    DWAlertAppearanceModeLight,
+    /// The dark appearance mode
+    DWAlertAppearanceModeDark,
+};
 
-NS_ASSUME_NONNULL_BEGIN
-
-@interface DWAlertPresentationController : UIPresentationController
-
-/**
- Appearance mode of the dimming view
- */
-@property (nonatomic, assign) DWAlertAppearanceMode appearanceMode;
-
-@property (nullable, strong, nonatomic) DWDimmingView *dimmingView;
-
-@end
-
-NS_ASSUME_NONNULL_END
+#endif /* DWAlertAppearanceMode_h */

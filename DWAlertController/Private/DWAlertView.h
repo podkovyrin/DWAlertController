@@ -17,6 +17,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "DWAlertAppearanceMode.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @class DWAlertAction;
@@ -40,6 +42,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (null_resettable, strong, nonatomic) Class actionViewClass;
 @property (nullable, weak, nonatomic) id<DWAlertViewDelegate> delegate;
 @property (nullable, strong, nonatomic) DWAlertAction *preferredAction;
+
+@property (nonatomic, assign) DWAlertAppearanceMode appearanceMode;
 
 @property (strong, nonatomic) UIColor *normalTintColor UI_APPEARANCE_SELECTOR;
 @property (strong, nonatomic) UIColor *disabledTintColor UI_APPEARANCE_SELECTOR;

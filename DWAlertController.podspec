@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
   s.name             = 'DWAlertController'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'A UIAlertController reimplementation with controller containment support.'
 
   s.description      = <<-DESC
   DWAlertController is an UIAlertController that supports displaying any view controller instead of title and message.
   DWAlertController fully copies the look and feel of UIAlertController and has the same API.
-  Supported features: iPhone / iPad compatible, Dynamic Type, Accessibility, rotation, tinting action buttons and many more.
+  Supported features: iPhone / iPad compatible, Dynamic Type, Accessibility, Dark Mode, rotation, tinting action buttons and many more.
                        DESC
 
   s.homepage         = 'https://github.com/podkovyrin/DWAlertController'

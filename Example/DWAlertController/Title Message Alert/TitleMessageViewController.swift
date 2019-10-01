@@ -53,7 +53,11 @@ class TitleMessageViewController: UIViewController {
         }
         titleLabel.textAlignment = .center
         titleLabel.numberOfLines = 0
-        titleLabel.textColor = .black
+        if #available(iOS 13.0, *) {
+            titleLabel.textColor = .label
+        } else {
+            titleLabel.textColor = .black
+        }
         
         messageLabel.translatesAutoresizingMaskIntoConstraints = false
         messageLabel.font = UIFont.preferredFont(forTextStyle: .footnote)
@@ -62,7 +66,11 @@ class TitleMessageViewController: UIViewController {
         }
         messageLabel.textAlignment = .center
         messageLabel.numberOfLines = 0
-        messageLabel.textColor = .black
+        if #available(iOS 13.0, *) {
+            titleLabel.textColor = .label
+        } else {
+            messageLabel.textColor = .black
+        }
         messageLabel.setContentCompressionResistancePriority(.defaultHigh - 1, for: .vertical)
         
         let spacing: CGFloat = 4

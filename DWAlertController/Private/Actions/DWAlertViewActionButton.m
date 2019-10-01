@@ -82,14 +82,6 @@ static NSLineBreakMode const LineBreakMode = NSLineBreakByTruncatingMiddle;
 static NSTextAlignment const TextAlignment = NSTextAlignmentCenter;
 static CGFloat const MinimumScaleFactor = 0.58;
 
-static UIColor *BackgroundColor() {
-    return [UIColor clearColor];
-}
-
-static UIColor *BackgroundHighlightedColor() {
-    return [UIColor colorWithWhite:1.0 alpha:0.7];
-}
-
 @interface DWAlertViewActionButton ()
 
 @property (readonly, strong, nonatomic) UILabel *titleLabel;
@@ -130,17 +122,6 @@ static UIColor *BackgroundHighlightedColor() {
         [self updateTitlePadding];
     }
     return self;
-}
-
-- (void)setHighlighted:(BOOL)highlighted {
-    [super setHighlighted:highlighted];
-
-    if (highlighted) {
-        self.backgroundColor = BackgroundHighlightedColor();
-    }
-    else {
-        self.backgroundColor = BackgroundColor();
-    }
 }
 
 - (void)setPreferred:(BOOL)preferred {

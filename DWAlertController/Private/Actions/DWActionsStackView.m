@@ -89,7 +89,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)actionView:(DWAlertViewActionBaseView *)actionButton touchBegan:(UITouch *)touch {
     if (actionButton.alertAction.enabled) {
-        actionButton.highlighted = YES;
         [self.delegate actionsStackView:self highlightActionAtRect:actionButton.frame];
         self.highlightedButton = actionButton;
     }
@@ -104,12 +103,8 @@ NS_ASSUME_NONNULL_BEGIN
         const CGRect bounds = button.bounds;
         const CGPoint point = [touch locationInView:button];
         if (button.alertAction.enabled && CGRectContainsPoint(bounds, point)) {
-            button.highlighted = YES;
             highlightedRect = button.frame;
             highlightedButton = button;
-        }
-        else {
-            button.highlighted = NO;
         }
     }
     [self.delegate actionsStackView:self highlightActionAtRect:highlightedRect];
@@ -150,9 +145,6 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 - (void)resetHighlightedButton {
-    for (DWAlertViewActionBaseView *button in self.arrangedSubviews) {
-        button.highlighted = NO;
-    }
     [self.delegate actionsStackView:self highlightActionAtRect:CGRectZero];
     self.feedbackGenerator = nil;
     self.highlightedButton = nil;

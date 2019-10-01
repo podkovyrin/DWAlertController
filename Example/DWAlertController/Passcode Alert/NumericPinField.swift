@@ -71,6 +71,28 @@ class NumericPinField: UIView {
         let width = NumericPinField.dotSize * count + NumericPinField.paddingBetweenDots * (count - 1)
         return CGSize(width: width, height: NumericPinField.dotSize)
     }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        
+        dotLayers.forEach { dot in
+            if #available(iOS 13.0, *) {
+                dot.strokeColor = UIColor.label.cgColor
+            } else {
+                dot.strokeColor = UIColor.black.cgColor
+            }
+        }
+        
+        for index in 0..<value.count {
+            var index = index
+            if option == .fourDigits {
+                index += 1
+            }
+
+            let dot = dotLayers[index]
+            dot.fillColor = dot.strokeColor
+        }
+    }
 
     func clear() {
         value.removeAll()
@@ -167,7 +189,7 @@ extension NumericPinField: UIKeyInput {
         }
 
         let dot = dotLayers[index]
-        dot.fillColor = UIColor.black.cgColor
+        dot.fillColor = dot.strokeColor
 
         if value.count == option.rawValue {
             // after dot's animation
@@ -192,7 +214,11 @@ extension NumericPinField: UIKeyInput {
 
         value.removeLast()
 
-        let index = count - 1
+        var index = count - 1
+        if option == .fourDigits {
+            index += 1
+        }
+        
         let dot = dotLayers[index]
         dot.fillColor = UIColor.clear.cgColor
     }
@@ -319,7 +345,11 @@ private extension NumericPinField {
 
     class func dotLayer() -> CAShapeLayer {
         let dot = CAShapeLayer()
-        dot.strokeColor = UIColor.black.cgColor
+        if #available(iOS 13.0, *) {
+            dot.strokeColor = UIColor.label.cgColor
+        } else {
+            dot.strokeColor = UIColor.black.cgColor
+        }
         dot.lineWidth = 1
         dot.fillColor = UIColor.clear.cgColor
         dot.fillRule = CAShapeLayerFillRule.evenOdd

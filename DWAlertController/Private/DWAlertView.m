@@ -60,20 +60,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Alert View
 
-static UIColor *BackgroundWhiteViewColor() {
-    return [UIColor colorWithWhite:1.0 alpha:0.1];
-}
-
-static UIColor *SeparatorColor() {
-    return [UIColor colorWithWhite:0.75 alpha:1.0];
-}
-
-static UIColor *ActionTouchHighlightColor() {
-    return [UIColor colorWithWhite:0.6 alpha:1.0];
-}
-
 @interface DWAlertView () <DWActionsStackViewDelegate, UIScrollViewDelegate>
 
+@property (readonly, nonatomic, strong) UIVisualEffectView *blurEffectView;
 @property (readonly, strong, nonatomic) UIVisualEffectView *vibrancyEffectView;
 @property (readonly, strong, nonatomic) UIScrollView *contentScrollView;
 @property (readonly, strong, nonatomic) UIView *contentView;
@@ -107,14 +96,15 @@ static UIColor *ActionTouchHighlightColor() {
 
         UIView *whiteView = [[UIView alloc] initWithFrame:self.bounds];
         whiteView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-        whiteView.backgroundColor = BackgroundWhiteViewColor();
+        whiteView.backgroundColor = DWAlertViewBackgroundViewColor();
         [self addSubview:whiteView];
 
-        UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight];
+        UIBlurEffect *blurEffect = DWAlertViewBlurEffect(DWAlertAppearanceModeAutomatic);
         UIVisualEffectView *blurEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
         blurEffectView.frame = self.bounds;
         blurEffectView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         [self addSubview:blurEffectView];
+        _blurEffectView = blurEffectView;
 
         UIVibrancyEffect *vibrancyEffect = [UIVibrancyEffect effectForBlurEffect:blurEffect];
         UIVisualEffectView *vibrancyEffectView = [[UIVisualEffectView alloc] initWithEffect:vibrancyEffect];
@@ -125,8 +115,9 @@ static UIColor *ActionTouchHighlightColor() {
 
         UIView *vibrancyContentView = vibrancyEffectView.contentView;
 
+        UIColor *separatorColor = DWAlertViewSeparatorColor(DWAlertAppearanceModeAutomatic);
         UIView *contentActionsSeparatorView = [[UIView alloc] initWithFrame:CGRectZero];
-        contentActionsSeparatorView.backgroundColor = SeparatorColor();
+        contentActionsSeparatorView.backgroundColor = separatorColor;
         [vibrancyContentView addSubview:contentActionsSeparatorView];
         _contentActionsSeparatorView = contentActionsSeparatorView;
 
@@ -136,14 +127,14 @@ static UIColor *ActionTouchHighlightColor() {
 
         DWDimmingView *separatorView = [[DWDimmingView alloc] initWithFrame:CGRectZero];
         separatorView.inverted = YES;
-        separatorView.dimmingColor = SeparatorColor();
+        separatorView.dimmingColor = separatorColor;
         separatorView.dimmingOpacity = 1.0;
         [separatorView setPathAnimationsDisabled];
         [effectsScrollView addSubview:separatorView];
         _separatorView = separatorView;
 
         UIView *actionTouchHighlightView = [[UIView alloc] initWithFrame:CGRectZero];
-        actionTouchHighlightView.backgroundColor = ActionTouchHighlightColor();
+        actionTouchHighlightView.backgroundColor = DWAlertViewActionTouchHighlightColor(DWAlertAppearanceModeAutomatic);
         [effectsScrollView addSubview:actionTouchHighlightView];
         _actionTouchHighlightView = actionTouchHighlightView;
 
@@ -181,6 +172,11 @@ static UIColor *ActionTouchHighlightColor() {
             [contentView.trailingAnchor constraintEqualToAnchor:contentScrollView.trailingAnchor],
             [contentView.widthAnchor constraintEqualToAnchor:self.widthAnchor],
         ]];
+        
+        if (@available(iOS 12.0, *)) {
+            const UIUserInterfaceStyle interfaceStyle = self.traitCollection.userInterfaceStyle;
+            [self updateAppearanceForMode:DWAlertAppearanceModeForUIInterfaceStyle(interfaceStyle)];
+        }
     }
     return self;
 }
@@ -268,6 +264,18 @@ static UIColor *ActionTouchHighlightColor() {
     return @[ enterKeyCommand ];
 }
 
+- (void)traitCollectionDidChange:(nullable UITraitCollection *)previousTraitCollection {
+    [super traitCollectionDidChange:previousTraitCollection];
+    
+    if (@available(iOS 12.0, *)) {
+        const UIUserInterfaceStyle style = self.traitCollection.userInterfaceStyle;
+        if (self.appearanceMode == DWAlertAppearanceModeAutomatic) {
+            DWAlertAppearanceMode appearanceMode = DWAlertAppearanceModeForUIInterfaceStyle(style);
+            [self updateAppearanceForMode:appearanceMode];
+        }
+    }
+}
+
 #pragma mark - Public
 
 - (Class)actionViewClass {
@@ -320,6 +328,12 @@ static UIColor *ActionTouchHighlightColor() {
 
 - (void)removeAllActions {
     [self.actionsStackView removeAllActions];
+}
+
+- (void)setAppearanceMode:(DWAlertAppearanceMode)appearanceMode {
+    _appearanceMode = appearanceMode;
+    
+    [self updateAppearanceForMode:appearanceMode];
 }
 
 - (void)setNormalTintColor:(UIColor *)normalTintColor {
@@ -449,6 +463,20 @@ static UIColor *ActionTouchHighlightColor() {
     }
 
     [self.delegate alertView:self didAction:self.preferredAction];
+}
+
+- (void)updateAppearanceForMode:(DWAlertAppearanceMode)appearanceMode {
+    UIBlurEffect *blurEffect = DWAlertViewBlurEffect(appearanceMode);
+    self.blurEffectView.effect = blurEffect;
+    
+    UIVibrancyEffect *vibrancyEffect = [UIVibrancyEffect effectForBlurEffect:blurEffect];
+    self.vibrancyEffectView.effect = vibrancyEffect;
+    
+    UIColor *separatorColor = DWAlertViewSeparatorColor(appearanceMode);
+    self.contentActionsSeparatorView.backgroundColor = separatorColor;
+    self.separatorView.dimmingColor = separatorColor;
+    
+    self.actionTouchHighlightView.backgroundColor = DWAlertViewActionTouchHighlightColor(appearanceMode);
 }
 
 @end
