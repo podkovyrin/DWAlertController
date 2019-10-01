@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (null_resettable, strong, nonatomic) UIBezierPath *dimmedPath;
 
 /**
- 0.4 by default
+ Defaults to 1.0
  */
 @property (assign, nonatomic) float dimmingOpacity;
 

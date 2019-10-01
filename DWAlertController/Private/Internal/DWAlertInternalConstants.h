@@ -20,6 +20,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "DWAlertAppearanceMode.h"
+
 // Default iOS UIAlertController's constants
 
 static CGFloat const DWAlertViewWidth = 270.0;
@@ -180,16 +182,56 @@ static CGFloat DWAlertViewActionButtonTitlePadding(UIContentSizeCategory categor
     }
 }
 
-static UIColor *DWAlertViewNormalTextColor(void) {
-    return [UIColor colorWithRed:0.0 green:122.0 / 255.0 blue:1.0 alpha:1.0];
+API_AVAILABLE(ios(12.0))
+static DWAlertAppearanceMode DWAlertAppearanceModeForUIInterfaceStyle(UIUserInterfaceStyle style) {
+    switch (style) {
+        case UIUserInterfaceStyleUnspecified: return DWAlertAppearanceModeAutomatic;
+        case UIUserInterfaceStyleLight: return DWAlertAppearanceModeLight;
+        case UIUserInterfaceStyleDark: return DWAlertAppearanceModeDark;
+    }
 }
 
-static UIColor *DWAlertViewDisabledTextColor(void) {
-    return [UIColor colorWithWhite:104.0 / 255.0 alpha:0.8];
+static UIColor *DWAlertViewNormalTextColor() {
+    return [UIColor systemBlueColor];
 }
 
-static UIColor *DWAlertViewDestructiveTextColor(void) {
-    return [UIColor colorWithRed:1.0 green:59.0 / 255.0 blue:48.0 / 255.0 alpha:1.0];
+static UIColor *DWAlertViewDisabledTextColor() {
+    return [UIColor systemGrayColor];
+}
+
+static UIColor *DWAlertViewDestructiveTextColor() {
+    return [UIColor systemRedColor];
+}
+
+static UIColor *DWAlertViewBackgroundViewColor() {
+    return [UIColor colorWithWhite:1.0 alpha:0.1];
+}
+
+static UIColor *DWAlertViewSeparatorColor(DWAlertAppearanceMode appearanceMode) {
+    if (appearanceMode == DWAlertAppearanceModeDark) {
+        return [UIColor whiteColor];
+    }
+    else {
+        return [UIColor colorWithWhite:0.75 alpha:1.0];
+    }
+}
+
+static UIColor *DWAlertViewActionTouchHighlightColor(DWAlertAppearanceMode appearanceMode) {
+    if (appearanceMode == DWAlertAppearanceModeDark) {
+        return [UIColor colorWithWhite:1.0 alpha:0.5];
+    }
+    else {
+        return [UIColor whiteColor];
+    }
+}
+
+static UIBlurEffect *DWAlertViewBlurEffect(DWAlertAppearanceMode appearanceMode) {
+    if (appearanceMode == DWAlertAppearanceModeDark) {
+        return [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
+    }
+    else {
+        return [UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight];
+    }
 }
 
 #pragma clang diagnostic pop

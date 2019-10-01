@@ -38,7 +38,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DWAlertViewActionBaseView : UIView
 
 @property (readonly, strong, nonatomic) DWAlertAction *alertAction;
-@property (assign, nonatomic, getter=isHighlighted) BOOL highlighted;
 @property (assign, nonatomic, getter=isPreferred) BOOL preferred;
 @property (nullable, weak, nonatomic) id<DWAlertViewActionBaseViewDelegate> delegate;
 

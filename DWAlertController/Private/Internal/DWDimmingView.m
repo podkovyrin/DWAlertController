@@ -95,7 +95,7 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 - (void)setupDimmingView {
-    self.dimmingOpacity = 0.4;
+    self.dimmingOpacity = 1.0;
     self.dimmingColor = [UIColor blackColor];
 }
 

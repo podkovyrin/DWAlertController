@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DWAlertController: c7c7b6c7a37515442ec96e23c59596f4ecaec9d4
+  DWAlertController: c6c4650d36ca1974cd7e6a9062d575a011ccdedc
 
 PODFILE CHECKSUM: 690dbb41a0105a3daeeba9e4accfbe86cbd007f4
 

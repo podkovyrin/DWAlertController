@@ -18,6 +18,7 @@
 #import <UIKit/UIKit.h>
 
 #import "DWAlertAction.h"
+#import "DWAlertAppearanceMode.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -58,6 +59,16 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, copy, nonatomic) NSArray<DWAlertAction *> *actions;
 - (void)addAction:(DWAlertAction *)action;
 - (void)setupActions:(NSArray<DWAlertAction *> *)actions;
+
+/**
+ Appearance mode of alert.
+ The default value is `automatic`. On iOS 13 follows user's Dark Mode setting. On iOS 12 or lower acts as light.
+ 
+ Setting this property to non-default value overrides Dark Mode setting on iOS 13. However, for instance, if
+ the light appearance alert is shown in the dark environment it won't look good when the action button is pressed
+ since `UIVibrancyEffect` is used to provide highlighted state of the action buttons.
+ */
+@property (nonatomic, assign) DWAlertAppearanceMode appearanceMode;
 
 /**
  The preferred action for the user to take from an alert.

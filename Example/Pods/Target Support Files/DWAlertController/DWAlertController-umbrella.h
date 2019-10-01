@@ -11,6 +11,7 @@
 #endif
 
 #import "DWAlertAction.h"
+#import "DWAlertAppearanceMode.h"
 #import "DWAlertController.h"
 
 FOUNDATION_EXPORT double DWAlertControllerVersionNumber;

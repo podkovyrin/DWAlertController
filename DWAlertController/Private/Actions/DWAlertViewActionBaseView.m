@@ -29,6 +29,8 @@ static NSString *const AlertActionEnabledKeyPath = @"alertAction.enabled";
     if (self) {
         _alertAction = alertAction;
         
+        self.backgroundColor = [UIColor clearColor];
+        
         self.isAccessibilityElement = YES;
         self.accessibilityLabel = alertAction.title;
 

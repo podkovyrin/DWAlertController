@@ -4,11 +4,8 @@
   "summary": "A UIAlertController reimplementation with controller containment support.",
   "description": "DWAlertController is an UIAlertController that supports displaying any view controller instead of title and message.\nDWAlertController fully copies the look and feel of UIAlertController and has the same API.\nSupported features: iPhone / iPad compatible, Dynamic Type, Accessibility, rotation, tinting action buttons and many more.",
   "homepage": "https://github.com/podkovyrin/DWAlertController",
-  "screenshots": "https://raw.githubusercontent.com/podkovyrin/DWAlertController/blob/master/assets/DWAlertController_Screens.png",
-  "license": {
-    "type": "MIT",
-    "file": "LICENSE"
-  },
+  "screenshots": "https://github.com/podkovyrin/DWAlertController/raw/master/assets/DWAlertController_Screens.png?raw=true",
+  "license": "MIT",
   "authors": {
     "Andrew Podkovyrin": "podkovyrin@gmail.com"
   },
