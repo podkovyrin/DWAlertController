@@ -28,6 +28,7 @@ This alert successfully used in production in our app [Dash Wallet](https://apps
 - Simple built-in transition from one content controller to another within a single `DWAlertController` (see Advanced alert in the Example app)
 - Dynamic Type
 - Accessibility
+- Dark Mode and dark appearance for iOS 12 or lower
 
 ## Usage
 
@@ -75,7 +76,6 @@ The `backgroundColor` of the content controller's view should be transparent (`U
 
 - Only `UIAlertController.Style.alert` is supported (since there are a lot of decent implementations of actionSheet-styled controls)
 - Updating the height of the currently displaying view controller is not supported. However, when displaying a new controller with `performTransition(toContentController:animated:)` method, it may have a different height.
-- iOS 13 Dark Mode is not currently supported (WIP).
 
 ## Requirements
 
