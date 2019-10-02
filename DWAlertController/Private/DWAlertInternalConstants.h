@@ -20,7 +20,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "DWAlertAppearanceMode.h"
+#import "../DWAlertAppearanceMode.h"
 
 // Default iOS UIAlertController's constants
 
@@ -185,9 +185,12 @@ static CGFloat DWAlertViewActionButtonTitlePadding(UIContentSizeCategory categor
 API_AVAILABLE(ios(12.0))
 static DWAlertAppearanceMode DWAlertAppearanceModeForUIInterfaceStyle(UIUserInterfaceStyle style) {
     switch (style) {
-        case UIUserInterfaceStyleUnspecified: return DWAlertAppearanceModeAutomatic;
-        case UIUserInterfaceStyleLight: return DWAlertAppearanceModeLight;
-        case UIUserInterfaceStyleDark: return DWAlertAppearanceModeDark;
+        case UIUserInterfaceStyleUnspecified:
+            return DWAlertAppearanceModeAutomatic;
+        case UIUserInterfaceStyleLight:
+            return DWAlertAppearanceModeLight;
+        case UIUserInterfaceStyleDark:
+            return DWAlertAppearanceModeDark;
     }
 }
 

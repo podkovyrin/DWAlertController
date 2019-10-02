@@ -17,7 +17,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "DWAlertAction.h"
+#import "../DWAlertAction.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

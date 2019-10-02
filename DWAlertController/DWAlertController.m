@@ -17,14 +17,14 @@
 
 #import "DWAlertController.h"
 
-#import "DWAlertAction+DWProtected.h"
-#import "DWAlertController+DWKeyboard.h"
-#import "DWAlertDismissalAnimationController.h"
-#import "DWAlertInternalConstants.h"
-#import "DWAlertPresentationAnimationController.h"
-#import "DWAlertPresentationController.h"
-#import "DWAlertView.h"
-#import "DWAlertViewActionBaseView.h"
+#import "Private/DWAlertAction+DWProtected.h"
+#import "Private/DWAlertController+DWKeyboard.h"
+#import "Private/DWAlertDismissalAnimationController.h"
+#import "Private/DWAlertInternalConstants.h"
+#import "Private/DWAlertPresentationAnimationController.h"
+#import "Private/DWAlertPresentationController.h"
+#import "Private/DWAlertView.h"
+#import "Private/DWAlertViewActionBaseView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

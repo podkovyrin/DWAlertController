@@ -15,13 +15,16 @@
 //  limitations under the License.
 //
 
-#import "DWAlertAction.h"
+#import "DWAlertViewActionBaseView.h"
+
+#import "../DWAlertAction.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DWAlertAction ()
-
-@property (nullable, copy, nonatomic) void (^handler)(DWAlertAction *action);
+/**
+ A view for DWAlertAction
+ */
+@interface DWAlertViewActionButton : DWAlertViewActionBaseView
 
 @end
 
