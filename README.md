@@ -3,6 +3,7 @@
 [![CI Status](https://img.shields.io/travis/podkovyrin/DWAlertController.svg?style=flat)](https://travis-ci.org/podkovyrin/DWAlertController)
 [![Version](https://img.shields.io/cocoapods/v/DWAlertController.svg?style=flat)](https://cocoapods.org/pods/DWAlertController)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Accio supported](https://img.shields.io/badge/Accio-supported-0A7CF5.svg?style=flat)](https://github.com/JamitLabs/Accio)
 [![License](https://img.shields.io/cocoapods/l/DWAlertController.svg?style=flat)](https://cocoapods.org/pods/DWAlertController)
 [![Platform](https://img.shields.io/cocoapods/p/DWAlertController.svg?style=flat)](https://cocoapods.org/pods/DWAlertController)
 
@@ -124,6 +125,18 @@ To integrate DWAlertController into your Xcode project using Carthage, specify i
 ```ogdl
 github "podkovyrin/DWAlertController"
 ```
+
+### Installation via Accio
+
+ 1. Add the following to your `Package.swift`:
+ 	```swift
+ 	.package(url: "https://github.com/podkovyrin/DWAlertController.git", .upToNextMajor(from: "0.2.1")),
+ 	```
+ 2. Next, add `DWAlertController` to your App targets dependencies like so:
+ 	```swift
+ 	.target(name: "App", dependencies: ["DWAlertController"]),
+ 	```
+ 3. Then run `accio update`.
 
 ## Author
 
