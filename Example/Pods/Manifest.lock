@@ -1,5 +1,5 @@
 PODS:
-  - DWAlertController (0.1.0)
+  - DWAlertController (0.2.0)
 
 DEPENDENCIES:
   - DWAlertController (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DWAlertController: c6c4650d36ca1974cd7e6a9062d575a011ccdedc
+  DWAlertController: 885a37ad681a3dfcec9727533bd5638881ca42df
 
 PODFILE CHECKSUM: 690dbb41a0105a3daeeba9e4accfbe86cbd007f4
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.1

@@ -7,43 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06BC34E4370DEDA85AB1E0E6BCBB84F6 /* DWAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 26C464DA08140AE34E5183384CF1995B /* DWAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00D1A40EB01D774AE26A858FF8B74032 /* DWAlertViewActionBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = AC813D4EA878693C7E262C6A63423129 /* DWAlertViewActionBaseView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0896EB716820D87C031CD4816F87FAE5 /* DWAlertPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FD97B69B1C877D8FC26768FE37AE36 /* DWAlertPresentationController.m */; };
+		0F0C7F3B0F79A4458E3D7949551C2903 /* DWAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68485789CDED01CD870C2E9A8FD2130A /* DWAlertView.m */; };
+		0F99A51DE73577DBB54F1B5684F04FD4 /* DWAlertPresentationAnimationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EABCD72BC9D074230E9F30ABF9127E /* DWAlertPresentationAnimationController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		13FD1FC0B1853594635013F6372C58FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		1998663BCDCEC4079F1A96F607FDB408 /* DWAlertPresentationAnimationController.h in Headers */ = {isa = PBXBuildFile; fileRef = E306E169A3917ACA17E8F5D3A185D688 /* DWAlertPresentationAnimationController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1B35064E0285DEB60A8DA2D17642B3C8 /* DWAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 569FA236C0063A12BF41C826241F62D3 /* DWAlertView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1DD1228339D6B7219FD125BC6DB8AA7B /* DWAlertAction+DWProtected.h in Headers */ = {isa = PBXBuildFile; fileRef = A3FC2E9F5B3AFF68DB66331511106000 /* DWAlertAction+DWProtected.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2CACD1B3B53BDF9027AF0976F294FB22 /* DWActionsStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7413CF79E8D36212E943F7ED334906 /* DWActionsStackView.m */; };
-		3044FA6C905013CF875DC5E15427BAE2 /* DWAlertController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9C502E4C0B167FB2D9A32E87F488CF /* DWAlertController-dummy.m */; };
-		31468DD32850D5BFC8D27711AFCB42F7 /* DWActionsStackView.h in Headers */ = {isa = PBXBuildFile; fileRef = D5C7BB235E74EC7073D9B5616E0BEB18 /* DWActionsStackView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		32741970601EF0EDC1B49E1E07DD9F0B /* DWAlertDismissalAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA45A708997E9620E423AEDD36E596D /* DWAlertDismissalAnimationController.m */; };
-		34FA6E7D6D77B34B32E5D4AFF8F13A57 /* DWAlertDismissalAnimationController.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F4F8AC093B5B398DEB9A87A05BD3C5 /* DWAlertDismissalAnimationController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3DD68DFD362EAAC8CC49151E9E9DC62D /* DWAlertViewActionButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 98C53C1BB82A53ED9B4A84430482B650 /* DWAlertViewActionButton.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		25FAC9B5348CAADE9A83D2EB26E4AE46 /* DWAlertPresentationAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB0E041A1EBACDF27A2C7964160D426 /* DWAlertPresentationAnimationController.m */; };
+		29554524451A084DEB0C9AFE33EA3531 /* DWAnimatableShapeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 87076716D8AC3227D28778667B9810EF /* DWAnimatableShapeLayer.m */; };
+		3AA8EF9121B2C0347C44C1D1A793A8F3 /* DWAlertController+DWKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = B6337D9EF586E3F32EC68F4C7E6DF65B /* DWAlertController+DWKeyboard.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		462EC827D3E35933AD18093699F42ACF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
-		4AF6DF78A8465BB900998E8A9542860E /* DWAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A96CB1CBC4BFD4F5FF20B710BADB706 /* DWAlertAction.m */; };
-		4FF32A52A6530708EE2877E596AD4467 /* DWAlertInternalConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = C025DA7B7B8A2457FB6E0239BCC3E206 /* DWAlertInternalConstants.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		57C7AB0ADB1534173B9AC37581B929E0 /* DWAlertViewActionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6F9FB5FCA3A1FC5B83B6AAA115667D /* DWAlertViewActionButton.m */; };
-		5894DEAEFB484D0D2E03CEF36E9D798B /* DWAlertController+DWKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = E8153F2D41528785C0D37818FC868B14 /* DWAlertController+DWKeyboard.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		49A2595AED5B185D2B3D5EE28EF0CD09 /* DWAlertViewActionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EE27D0BBD00BBB65375CE72166F8FD23 /* DWAlertViewActionButton.m */; };
+		4D6C4DEF6D982F1FFA9E530249CB12A4 /* DWAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = DF3890575BA24AA51F41A1B5E01B965C /* DWAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C58B783E1C9FDC9E695C59E8274A881 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		6169216B9CFCC999D47BEAE4E52A5078 /* DWAnimatableShapeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DA4C53D34D16D9BA0DB0C34238B0E4 /* DWAnimatableShapeLayer.m */; };
-		6282A38F987C6BD508E51D788795F686 /* DWAlertViewActionBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = D994DC49FF1D57F5D647515561A7ED61 /* DWAlertViewActionBaseView.m */; };
-		66ACEFDB33B9E7BB0BAE252C7EF89AC2 /* DWAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD34078CE7E40C74E687AC6B6BDB8C1 /* DWAlertView.m */; };
-		6BE8D7ACA5FB41DC1A81F698E8DEB049 /* DWAlertController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 652C3E918A524E97703EF02CDA31346F /* DWAlertController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		868AF9A05E1CD175A49A20327860C0FD /* DWAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7ECCA3197572E7F2FB7DD115272590 /* DWAlertController.m */; };
+		5FB44C1D7445AA1C6C48B82E7DAC448D /* DWAlertController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3804BADE115CA6EA7EE881FE9607E1A0 /* DWAlertController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		686B0118F137D8396AEFED78F973A5BE /* DWAlertAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 18E7F4B33637BD366F7D918EFEBD0E3D /* DWAlertAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7625CB8BD9ED40D7F21B64111E4A401C /* DWActionsStackView.h in Headers */ = {isa = PBXBuildFile; fileRef = 21BCDF56F625B1CC31B3A7DFED29E4A7 /* DWActionsStackView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		794FAAFCFB5ED27AA8469822D5B33B2A /* DWAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0458ED1D3E7CCC0EB498428F4E455037 /* DWAlertView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		85942423FA98DF525E323AB9E316B760 /* DWAlertController+DWKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F82C8B8348A6C4CE6E5AE9618722067 /* DWAlertController+DWKeyboard.m */; };
+		87CFCAF0F67EF0725686AB283963423D /* DWAlertDismissalAnimationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 013144C9F5043C6C4BAEA64AA460D7D5 /* DWAlertDismissalAnimationController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		889E4470D7A7044731D0DCEA391D9863 /* Pods-DWAlertController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 197A0B9B66D49E360C23A88B46A1A7F8 /* Pods-DWAlertController_Example-dummy.m */; };
-		8AB39146590AE46FC6D0E19E56245B6E /* DWAlertPresentationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B4D971AC530019B59BE1049326A0291 /* DWAlertPresentationController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		953A0025FD08383C08D9653633F03E97 /* DWAlertAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 589A4ECC640C183B6B38ED745DCC7C67 /* DWAlertAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A349280D802447233B83B7D269D4273C /* DWAlertPresentationAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3845C850C11728808994C54F28281138 /* DWAlertPresentationAnimationController.m */; };
+		9FDB945C9641994617C447020BB51274 /* DWAlertViewActionBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DB39692E319960EA3888DD19218892 /* DWAlertViewActionBaseView.m */; };
+		A22027476F505AD38C72CDE4125AF111 /* DWAlertAppearanceMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 905BF23E7C1CF2084500429B993C4136 /* DWAlertAppearanceMode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A619FF5C4E5677CC9D1FD58890F01AC3 /* DWAlertViewActionButton.h in Headers */ = {isa = PBXBuildFile; fileRef = A849D80D39731544504D97B20EFB0F00 /* DWAlertViewActionButton.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B01A5B1FFEDA0E3536E55AC9AEB4591E /* Pods-DWAlertController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CDE0F52AA9B2705B222A3CDF044968A /* Pods-DWAlertController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B70F8FD2AAD98FB0127B3834114C87C0 /* DWDimmingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF1F69D6C4A68B3852EFF1D2B1FA8D8 /* DWDimmingView.m */; };
-		BAC17FF9ECF895BEAB1C4574BD60031D /* DWAnimatableShapeLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = D117690CF450953E950AA0A88033F37D /* DWAnimatableShapeLayer.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BDBDD479435A1B14F1EE92C564981C7A /* DWDimmingView.h in Headers */ = {isa = PBXBuildFile; fileRef = B3477D678A411630F21D1CB3AFAA1B45 /* DWDimmingView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CCF4511D832CC89468912CE942C4C8E8 /* DWAlertAppearanceMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 9576667F6AE587D7E19CB47F225F32C6 /* DWAlertAppearanceMode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CF11D96C0AA4343208B8981B18C59B8F /* DWAlertController+DWKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = B91D7823C118DEF2490505025280F448 /* DWAlertController+DWKeyboard.m */; };
+		B04CCBA297F18A9997338A28794E4948 /* DWDimmingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF149E198CC379E9DF2ED38D35C84E /* DWDimmingView.m */; };
+		B46F08E75FA66CECF37346142FF2180C /* DWAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C68B87F5264D87E14C6847DE0E1464 /* DWAlertController.m */; };
+		C3DF93B48654E9E578CC22307120772D /* DWAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = B4303A79DEA760D9BC4C8E83E5C082EF /* DWAlertAction.m */; };
+		D00BA51C2B2E4C152086C3EEBA323465 /* DWAlertController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDC0F01FDE163314CCDE0A555BCCECB /* DWAlertController-dummy.m */; };
+		D639B2D739C61D71D7265F0BCA1BB65C /* DWDimmingView.h in Headers */ = {isa = PBXBuildFile; fileRef = C21FFC573CB8804DB26CB30EEA59E24B /* DWDimmingView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DBA6EFD3449B00D8800E09360DECC519 /* Pods-DWAlertController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED43F16DF412ACD640CF7E4867297440 /* Pods-DWAlertController_Tests-dummy.m */; };
 		E09E9DB7D6DCDABDE970B9FDE7AAE3DF /* Pods-DWAlertController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 967DDB0F02945C5C2B3372B53FBB4D05 /* Pods-DWAlertController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E11DA3D3E0325FBF5A5173192BB5AB63 /* DWAlertPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E90C8F229B0DD25A4C577368466A76 /* DWAlertPresentationController.m */; };
-		E60B6B687728BD197623BE286A9B3F2B /* DWAlertViewActionBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6804F393DA62E720DA60F2FA6B549148 /* DWAlertViewActionBaseView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E5F9BBB39A89B928D31156DB27AA72AF /* DWAlertAction+DWProtected.h in Headers */ = {isa = PBXBuildFile; fileRef = E132C59874B83DC2A0C4300C46742507 /* DWAlertAction+DWProtected.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EC611DC22C1D0E38A2B0A839096C93D8 /* DWActionsStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D047DDCC32699529B7E31D8DDFDE81 /* DWActionsStackView.m */; };
 		EFBBC0951B624B24DE596F64C4F7D912 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		F72C47D67112E67BD693CEFB07D03BA8 /* DWAnimatableShapeLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC22E25059D726C666454633F0EAA05 /* DWAnimatableShapeLayer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FA4A19B615201B45C0BE784D21B9FAD2 /* DWAlertDismissalAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A895073ECA2FCB82F74767F5ABAF1536 /* DWAlertDismissalAnimationController.m */; };
+		FAB9B5A1C2DFBF5CB91443C610309AD7 /* DWAlertInternalConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = FA8A7414739FB6A38ABECE23D95BE9B8 /* DWAlertInternalConstants.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FFD44E52C40767716186E56E73FE1DB9 /* DWAlertPresentationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 99E17FD200511D8AB0375F72E28BDEF2 /* DWAlertPresentationController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,65 +64,65 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A7413CF79E8D36212E943F7ED334906 /* DWActionsStackView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DWActionsStackView.m; sourceTree = "<group>"; };
-		0F6F9FB5FCA3A1FC5B83B6AAA115667D /* DWAlertViewActionButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DWAlertViewActionButton.m; sourceTree = "<group>"; };
+		013144C9F5043C6C4BAEA64AA460D7D5 /* DWAlertDismissalAnimationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DWAlertDismissalAnimationController.h; sourceTree = "<group>"; };
+		0458ED1D3E7CCC0EB498428F4E455037 /* DWAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DWAlertView.h; sourceTree = "<group>"; };
+		10069F4BC6905ADAA16B4BDC0D13DEDE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		124BD70948D505CCC52CB5BEC7544D95 /* DWAlertController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DWAlertController.modulemap; sourceTree = "<group>"; };
+		18E7F4B33637BD366F7D918EFEBD0E3D /* DWAlertAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWAlertAction.h; path = DWAlertController/DWAlertAction.h; sourceTree = "<group>"; };
 		197A0B9B66D49E360C23A88B46A1A7F8 /* Pods-DWAlertController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DWAlertController_Example-dummy.m"; sourceTree = "<group>"; };
-		1AF1F69D6C4A68B3852EFF1D2B1FA8D8 /* DWDimmingView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DWDimmingView.m; sourceTree = "<group>"; };
-		1B4D971AC530019B59BE1049326A0291 /* DWAlertPresentationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DWAlertPresentationController.h; sourceTree = "<group>"; };
 		1D7DC60748DD86786B75E8DA1A153AC6 /* Pods-DWAlertController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DWAlertController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		25DA4C53D34D16D9BA0DB0C34238B0E4 /* DWAnimatableShapeLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DWAnimatableShapeLayer.m; sourceTree = "<group>"; };
-		26C464DA08140AE34E5183384CF1995B /* DWAlertController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWAlertController.h; path = DWAlertController/DWAlertController.h; sourceTree = "<group>"; };
-		28CE2A6117B428B3DC1E2B289A3B1B75 /* DWAlertController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DWAlertController.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		21BCDF56F625B1CC31B3A7DFED29E4A7 /* DWActionsStackView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DWActionsStackView.h; sourceTree = "<group>"; };
 		2CDE0F52AA9B2705B222A3CDF044968A /* Pods-DWAlertController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DWAlertController_Tests-umbrella.h"; sourceTree = "<group>"; };
 		2E6E3BEAAA42CAC4AA5DC9063C52AFC3 /* Pods-DWAlertController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DWAlertController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		3313730C91E75CFC6342C01DE4DC8C3F /* Pods-DWAlertController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DWAlertController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		3845C850C11728808994C54F28281138 /* DWAlertPresentationAnimationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DWAlertPresentationAnimationController.m; sourceTree = "<group>"; };
+		37EABCD72BC9D074230E9F30ABF9127E /* DWAlertPresentationAnimationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DWAlertPresentationAnimationController.h; sourceTree = "<group>"; };
+		3804BADE115CA6EA7EE881FE9607E1A0 /* DWAlertController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DWAlertController-umbrella.h"; sourceTree = "<group>"; };
 		3D92273C100DC879637E3BA83E0F70FF /* Pods-DWAlertController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DWAlertController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		3E6AAE888632624B48015F22E4DFF282 /* DWAlertController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DWAlertController-Info.plist"; sourceTree = "<group>"; };
 		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4963FE7B7D6B5C6229887FE78D9229F2 /* Pods-DWAlertController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DWAlertController_Example-frameworks.sh"; sourceTree = "<group>"; };
-		4A96CB1CBC4BFD4F5FF20B710BADB706 /* DWAlertAction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWAlertAction.m; path = DWAlertController/DWAlertAction.m; sourceTree = "<group>"; };
-		569FA236C0063A12BF41C826241F62D3 /* DWAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DWAlertView.h; sourceTree = "<group>"; };
-		589A4ECC640C183B6B38ED745DCC7C67 /* DWAlertAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWAlertAction.h; path = DWAlertController/DWAlertAction.h; sourceTree = "<group>"; };
-		5DD60B530AFCB3AE14E9E2DE9581E07D /* DWAlertController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DWAlertController.modulemap; sourceTree = "<group>"; };
-		612EBF2076EDDCE6F5FA6B67CD7D855F /* DWAlertController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DWAlertController-prefix.pch"; sourceTree = "<group>"; };
+		5392F24FB80CFF9A9FCD5D71662F1701 /* DWAlertController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DWAlertController-prefix.pch"; sourceTree = "<group>"; };
+		58AF149E198CC379E9DF2ED38D35C84E /* DWDimmingView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DWDimmingView.m; sourceTree = "<group>"; };
 		6268DF07CAFC0AEDE2440F1B42283441 /* Pods-DWAlertController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DWAlertController_Example.release.xcconfig"; sourceTree = "<group>"; };
-		652C3E918A524E97703EF02CDA31346F /* DWAlertController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DWAlertController-umbrella.h"; sourceTree = "<group>"; };
-		6804F393DA62E720DA60F2FA6B549148 /* DWAlertViewActionBaseView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DWAlertViewActionBaseView.h; sourceTree = "<group>"; };
+		68485789CDED01CD870C2E9A8FD2130A /* DWAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DWAlertView.m; sourceTree = "<group>"; };
 		6F81D3410FFC12E9914C700CC4D3C254 /* Pods-DWAlertController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DWAlertController_Example.modulemap"; sourceTree = "<group>"; };
-		7190477BD3D7FE9C9CA5999EE8F27AC7 /* DWAlertController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DWAlertController-Info.plist"; sourceTree = "<group>"; };
+		73DB39692E319960EA3888DD19218892 /* DWAlertViewActionBaseView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DWAlertViewActionBaseView.m; sourceTree = "<group>"; };
+		75FD97B69B1C877D8FC26768FE37AE36 /* DWAlertPresentationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DWAlertPresentationController.m; sourceTree = "<group>"; };
+		78EDABC6731380CE39C84A06C45FA763 /* DWAlertController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DWAlertController.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7C01D47EE8F2FFB06157A9DDDBCF5217 /* Pods_DWAlertController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DWAlertController_Tests.framework; path = "Pods-DWAlertController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D7ECCA3197572E7F2FB7DD115272590 /* DWAlertController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWAlertController.m; path = DWAlertController/DWAlertController.m; sourceTree = "<group>"; };
-		86F252B500110B298D3112D68DDF2805 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		9576667F6AE587D7E19CB47F225F32C6 /* DWAlertAppearanceMode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWAlertAppearanceMode.h; path = DWAlertController/DWAlertAppearanceMode.h; sourceTree = "<group>"; };
+		7F82C8B8348A6C4CE6E5AE9618722067 /* DWAlertController+DWKeyboard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DWAlertController+DWKeyboard.m"; sourceTree = "<group>"; };
+		87076716D8AC3227D28778667B9810EF /* DWAnimatableShapeLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DWAnimatableShapeLayer.m; sourceTree = "<group>"; };
+		905BF23E7C1CF2084500429B993C4136 /* DWAlertAppearanceMode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWAlertAppearanceMode.h; path = DWAlertController/DWAlertAppearanceMode.h; sourceTree = "<group>"; };
 		967DDB0F02945C5C2B3372B53FBB4D05 /* Pods-DWAlertController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DWAlertController_Example-umbrella.h"; sourceTree = "<group>"; };
-		98C53C1BB82A53ED9B4A84430482B650 /* DWAlertViewActionButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DWAlertViewActionButton.h; sourceTree = "<group>"; };
+		99E17FD200511D8AB0375F72E28BDEF2 /* DWAlertPresentationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DWAlertPresentationController.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A0AB96F210A27DCDD7F1C1D56A5602DB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		A3FC2E9F5B3AFF68DB66331511106000 /* DWAlertAction+DWProtected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DWAlertAction+DWProtected.h"; sourceTree = "<group>"; };
-		A5E90C8F229B0DD25A4C577368466A76 /* DWAlertPresentationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DWAlertPresentationController.m; sourceTree = "<group>"; };
-		AF9C502E4C0B167FB2D9A32E87F488CF /* DWAlertController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DWAlertController-dummy.m"; sourceTree = "<group>"; };
-		B218558A9D98008EE2F4087471361294 /* DWAlertController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DWAlertController.xcconfig; sourceTree = "<group>"; };
-		B3477D678A411630F21D1CB3AFAA1B45 /* DWDimmingView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DWDimmingView.h; sourceTree = "<group>"; };
+		9DDC0F01FDE163314CCDE0A555BCCECB /* DWAlertController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DWAlertController-dummy.m"; sourceTree = "<group>"; };
+		A849D80D39731544504D97B20EFB0F00 /* DWAlertViewActionButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DWAlertViewActionButton.h; sourceTree = "<group>"; };
+		A895073ECA2FCB82F74767F5ABAF1536 /* DWAlertDismissalAnimationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DWAlertDismissalAnimationController.m; sourceTree = "<group>"; };
+		AC813D4EA878693C7E262C6A63423129 /* DWAlertViewActionBaseView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DWAlertViewActionBaseView.h; sourceTree = "<group>"; };
+		B4303A79DEA760D9BC4C8E83E5C082EF /* DWAlertAction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWAlertAction.m; path = DWAlertController/DWAlertAction.m; sourceTree = "<group>"; };
 		B442EE9396782B9B7C91999021581CF1 /* Pods-DWAlertController_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DWAlertController_Example-Info.plist"; sourceTree = "<group>"; };
+		B6337D9EF586E3F32EC68F4C7E6DF65B /* DWAlertController+DWKeyboard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DWAlertController+DWKeyboard.h"; sourceTree = "<group>"; };
 		B6B6BF02164B09549B93912EACFFD57A /* DWAlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DWAlertController.framework; path = DWAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B91D7823C118DEF2490505025280F448 /* DWAlertController+DWKeyboard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DWAlertController+DWKeyboard.m"; sourceTree = "<group>"; };
+		BAD2034A5ACBE1F8D6716F408FA8EA32 /* DWAlertController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DWAlertController.xcconfig; sourceTree = "<group>"; };
 		BB94819F1516B8EA944B3ABCFA73CA48 /* Pods-DWAlertController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DWAlertController_Tests.modulemap"; sourceTree = "<group>"; };
-		C025DA7B7B8A2457FB6E0239BCC3E206 /* DWAlertInternalConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DWAlertInternalConstants.h; sourceTree = "<group>"; };
 		C0B5428EBFCA1881A2100AFBB79AFC96 /* Pods-DWAlertController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DWAlertController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C21FFC573CB8804DB26CB30EEA59E24B /* DWDimmingView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DWDimmingView.h; sourceTree = "<group>"; };
+		C4D047DDCC32699529B7E31D8DDFDE81 /* DWActionsStackView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DWActionsStackView.m; sourceTree = "<group>"; };
+		CFC22E25059D726C666454633F0EAA05 /* DWAnimatableShapeLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DWAnimatableShapeLayer.h; sourceTree = "<group>"; };
 		D0F78760C891269F223B42EA2172D94F /* Pods-DWAlertController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DWAlertController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		D117690CF450953E950AA0A88033F37D /* DWAnimatableShapeLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DWAnimatableShapeLayer.h; sourceTree = "<group>"; };
 		D2F0C68DC9115163BD2F30325B676D02 /* Pods-DWAlertController_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DWAlertController_Tests-Info.plist"; sourceTree = "<group>"; };
-		D5C7BB235E74EC7073D9B5616E0BEB18 /* DWActionsStackView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DWActionsStackView.h; sourceTree = "<group>"; };
+		D60D26C9772202E2F6D48FE68ECE8024 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		D653D1B2147BFA86EEF3406520EBBE3E /* Pods-DWAlertController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DWAlertController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D994DC49FF1D57F5D647515561A7ED61 /* DWAlertViewActionBaseView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DWAlertViewActionBaseView.m; sourceTree = "<group>"; };
-		DCA45A708997E9620E423AEDD36E596D /* DWAlertDismissalAnimationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DWAlertDismissalAnimationController.m; sourceTree = "<group>"; };
-		DCD34078CE7E40C74E687AC6B6BDB8C1 /* DWAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DWAlertView.m; sourceTree = "<group>"; };
-		E1F4F8AC093B5B398DEB9A87A05BD3C5 /* DWAlertDismissalAnimationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DWAlertDismissalAnimationController.h; sourceTree = "<group>"; };
-		E306E169A3917ACA17E8F5D3A185D688 /* DWAlertPresentationAnimationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DWAlertPresentationAnimationController.h; sourceTree = "<group>"; };
+		DF3890575BA24AA51F41A1B5E01B965C /* DWAlertController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWAlertController.h; path = DWAlertController/DWAlertController.h; sourceTree = "<group>"; };
+		E132C59874B83DC2A0C4300C46742507 /* DWAlertAction+DWProtected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DWAlertAction+DWProtected.h"; sourceTree = "<group>"; };
 		E6434716C254E07459DA133FB65FA559 /* Pods_DWAlertController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DWAlertController_Example.framework; path = "Pods-DWAlertController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8153F2D41528785C0D37818FC868B14 /* DWAlertController+DWKeyboard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DWAlertController+DWKeyboard.h"; sourceTree = "<group>"; };
 		ED43F16DF412ACD640CF7E4867297440 /* Pods-DWAlertController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DWAlertController_Tests-dummy.m"; sourceTree = "<group>"; };
+		EE27D0BBD00BBB65375CE72166F8FD23 /* DWAlertViewActionButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DWAlertViewActionButton.m; sourceTree = "<group>"; };
+		F0C68B87F5264D87E14C6847DE0E1464 /* DWAlertController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWAlertController.m; path = DWAlertController/DWAlertController.m; sourceTree = "<group>"; };
+		FA8A7414739FB6A38ABECE23D95BE9B8 /* DWAlertInternalConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DWAlertInternalConstants.h; sourceTree = "<group>"; };
+		FAB0E041A1EBACDF27A2C7964160D426 /* DWAlertPresentationAnimationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DWAlertPresentationAnimationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,22 +154,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0E600B89C41E28275B24D448967EBEEA /* DWAlertController */ = {
-			isa = PBXGroup;
-			children = (
-				589A4ECC640C183B6B38ED745DCC7C67 /* DWAlertAction.h */,
-				4A96CB1CBC4BFD4F5FF20B710BADB706 /* DWAlertAction.m */,
-				9576667F6AE587D7E19CB47F225F32C6 /* DWAlertAppearanceMode.h */,
-				26C464DA08140AE34E5183384CF1995B /* DWAlertController.h */,
-				7D7ECCA3197572E7F2FB7DD115272590 /* DWAlertController.m */,
-				CD5BE60335E76040453760E34CA4862D /* Pod */,
-				3B7B14DF20FED2A6099D5F1BFA612A7B /* Private */,
-				E109929276230B272665805CE498C805 /* Support Files */,
-			);
-			name = DWAlertController;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,28 +162,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		28FF8A0AEC1B37BE28218A275D7C8D78 /* Transition */ = {
+		1AB1B49DA7F510C7674F59C1E6059147 /* Private */ = {
 			isa = PBXGroup;
 			children = (
-				E1F4F8AC093B5B398DEB9A87A05BD3C5 /* DWAlertDismissalAnimationController.h */,
-				DCA45A708997E9620E423AEDD36E596D /* DWAlertDismissalAnimationController.m */,
-				E306E169A3917ACA17E8F5D3A185D688 /* DWAlertPresentationAnimationController.h */,
-				3845C850C11728808994C54F28281138 /* DWAlertPresentationAnimationController.m */,
-				1B4D971AC530019B59BE1049326A0291 /* DWAlertPresentationController.h */,
-				A5E90C8F229B0DD25A4C577368466A76 /* DWAlertPresentationController.m */,
-			);
-			name = Transition;
-			path = Transition;
-			sourceTree = "<group>";
-		};
-		3B7B14DF20FED2A6099D5F1BFA612A7B /* Private */ = {
-			isa = PBXGroup;
-			children = (
-				569FA236C0063A12BF41C826241F62D3 /* DWAlertView.h */,
-				DCD34078CE7E40C74E687AC6B6BDB8C1 /* DWAlertView.m */,
-				9BFC96DA53E1D2FBD414EDED68AC5921 /* Actions */,
-				8AE54F74073C342704D7D08F5754264B /* Internal */,
-				28FF8A0AEC1B37BE28218A275D7C8D78 /* Transition */,
+				21BCDF56F625B1CC31B3A7DFED29E4A7 /* DWActionsStackView.h */,
+				C4D047DDCC32699529B7E31D8DDFDE81 /* DWActionsStackView.m */,
+				E132C59874B83DC2A0C4300C46742507 /* DWAlertAction+DWProtected.h */,
+				B6337D9EF586E3F32EC68F4C7E6DF65B /* DWAlertController+DWKeyboard.h */,
+				7F82C8B8348A6C4CE6E5AE9618722067 /* DWAlertController+DWKeyboard.m */,
+				013144C9F5043C6C4BAEA64AA460D7D5 /* DWAlertDismissalAnimationController.h */,
+				A895073ECA2FCB82F74767F5ABAF1536 /* DWAlertDismissalAnimationController.m */,
+				FA8A7414739FB6A38ABECE23D95BE9B8 /* DWAlertInternalConstants.h */,
+				37EABCD72BC9D074230E9F30ABF9127E /* DWAlertPresentationAnimationController.h */,
+				FAB0E041A1EBACDF27A2C7964160D426 /* DWAlertPresentationAnimationController.m */,
+				99E17FD200511D8AB0375F72E28BDEF2 /* DWAlertPresentationController.h */,
+				75FD97B69B1C877D8FC26768FE37AE36 /* DWAlertPresentationController.m */,
+				0458ED1D3E7CCC0EB498428F4E455037 /* DWAlertView.h */,
+				68485789CDED01CD870C2E9A8FD2130A /* DWAlertView.m */,
+				AC813D4EA878693C7E262C6A63423129 /* DWAlertViewActionBaseView.h */,
+				73DB39692E319960EA3888DD19218892 /* DWAlertViewActionBaseView.m */,
+				A849D80D39731544504D97B20EFB0F00 /* DWAlertViewActionButton.h */,
+				EE27D0BBD00BBB65375CE72166F8FD23 /* DWAlertViewActionButton.m */,
+				CFC22E25059D726C666454633F0EAA05 /* DWAnimatableShapeLayer.h */,
+				87076716D8AC3227D28778667B9810EF /* DWAnimatableShapeLayer.m */,
+				C21FFC573CB8804DB26CB30EEA59E24B /* DWDimmingView.h */,
+				58AF149E198CC379E9DF2ED38D35C84E /* DWDimmingView.m */,
 			);
 			name = Private;
 			path = DWAlertController/Private;
@@ -231,52 +218,28 @@
 			path = "Target Support Files/Pods-DWAlertController_Tests";
 			sourceTree = "<group>";
 		};
-		8AE54F74073C342704D7D08F5754264B /* Internal */ = {
+		4DE3D9A0077831A2BC577221BE94EEDC /* DWAlertController */ = {
 			isa = PBXGroup;
 			children = (
-				A3FC2E9F5B3AFF68DB66331511106000 /* DWAlertAction+DWProtected.h */,
-				E8153F2D41528785C0D37818FC868B14 /* DWAlertController+DWKeyboard.h */,
-				B91D7823C118DEF2490505025280F448 /* DWAlertController+DWKeyboard.m */,
-				C025DA7B7B8A2457FB6E0239BCC3E206 /* DWAlertInternalConstants.h */,
-				D117690CF450953E950AA0A88033F37D /* DWAnimatableShapeLayer.h */,
-				25DA4C53D34D16D9BA0DB0C34238B0E4 /* DWAnimatableShapeLayer.m */,
-				B3477D678A411630F21D1CB3AFAA1B45 /* DWDimmingView.h */,
-				1AF1F69D6C4A68B3852EFF1D2B1FA8D8 /* DWDimmingView.m */,
+				18E7F4B33637BD366F7D918EFEBD0E3D /* DWAlertAction.h */,
+				B4303A79DEA760D9BC4C8E83E5C082EF /* DWAlertAction.m */,
+				905BF23E7C1CF2084500429B993C4136 /* DWAlertAppearanceMode.h */,
+				DF3890575BA24AA51F41A1B5E01B965C /* DWAlertController.h */,
+				F0C68B87F5264D87E14C6847DE0E1464 /* DWAlertController.m */,
+				ED05376533BD7B0C75B94A0C19A4D96B /* Pod */,
+				1AB1B49DA7F510C7674F59C1E6059147 /* Private */,
+				EBD8F00F0F8C720AEE2845870E85FF35 /* Support Files */,
 			);
-			name = Internal;
-			path = Internal;
-			sourceTree = "<group>";
-		};
-		9BFC96DA53E1D2FBD414EDED68AC5921 /* Actions */ = {
-			isa = PBXGroup;
-			children = (
-				D5C7BB235E74EC7073D9B5616E0BEB18 /* DWActionsStackView.h */,
-				0A7413CF79E8D36212E943F7ED334906 /* DWActionsStackView.m */,
-				6804F393DA62E720DA60F2FA6B549148 /* DWAlertViewActionBaseView.h */,
-				D994DC49FF1D57F5D647515561A7ED61 /* DWAlertViewActionBaseView.m */,
-				98C53C1BB82A53ED9B4A84430482B650 /* DWAlertViewActionButton.h */,
-				0F6F9FB5FCA3A1FC5B83B6AAA115667D /* DWAlertViewActionButton.m */,
-			);
-			name = Actions;
-			path = Actions;
+			name = DWAlertController;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		C12201EB377BA6F155C64BDCC72D86F2 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0E600B89C41E28275B24D448967EBEEA /* DWAlertController */,
+				4DE3D9A0077831A2BC577221BE94EEDC /* DWAlertController */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		CD5BE60335E76040453760E34CA4862D /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				28CE2A6117B428B3DC1E2B289A3B1B75 /* DWAlertController.podspec */,
-				86F252B500110B298D3112D68DDF2805 /* LICENSE */,
-				A0AB96F210A27DCDD7F1C1D56A5602DB /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -316,20 +279,6 @@
 			path = "Target Support Files/Pods-DWAlertController_Example";
 			sourceTree = "<group>";
 		};
-		E109929276230B272665805CE498C805 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5DD60B530AFCB3AE14E9E2DE9581E07D /* DWAlertController.modulemap */,
-				B218558A9D98008EE2F4087471361294 /* DWAlertController.xcconfig */,
-				AF9C502E4C0B167FB2D9A32E87F488CF /* DWAlertController-dummy.m */,
-				7190477BD3D7FE9C9CA5999EE8F27AC7 /* DWAlertController-Info.plist */,
-				612EBF2076EDDCE6F5FA6B67CD7D855F /* DWAlertController-prefix.pch */,
-				652C3E918A524E97703EF02CDA31346F /* DWAlertController-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/DWAlertController";
-			sourceTree = "<group>";
-		};
 		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -339,37 +288,61 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		EBD8F00F0F8C720AEE2845870E85FF35 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				124BD70948D505CCC52CB5BEC7544D95 /* DWAlertController.modulemap */,
+				BAD2034A5ACBE1F8D6716F408FA8EA32 /* DWAlertController.xcconfig */,
+				9DDC0F01FDE163314CCDE0A555BCCECB /* DWAlertController-dummy.m */,
+				3E6AAE888632624B48015F22E4DFF282 /* DWAlertController-Info.plist */,
+				5392F24FB80CFF9A9FCD5D71662F1701 /* DWAlertController-prefix.pch */,
+				3804BADE115CA6EA7EE881FE9607E1A0 /* DWAlertController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/DWAlertController";
+			sourceTree = "<group>";
+		};
+		ED05376533BD7B0C75B94A0C19A4D96B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				78EDABC6731380CE39C84A06C45FA763 /* DWAlertController.podspec */,
+				10069F4BC6905ADAA16B4BDC0D13DEDE /* LICENSE */,
+				D60D26C9772202E2F6D48FE68ECE8024 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		14CA66CFDA363CBDFA2C84C24BAD9075 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				31468DD32850D5BFC8D27711AFCB42F7 /* DWActionsStackView.h in Headers */,
-				1DD1228339D6B7219FD125BC6DB8AA7B /* DWAlertAction+DWProtected.h in Headers */,
-				953A0025FD08383C08D9653633F03E97 /* DWAlertAction.h in Headers */,
-				CCF4511D832CC89468912CE942C4C8E8 /* DWAlertAppearanceMode.h in Headers */,
-				5894DEAEFB484D0D2E03CEF36E9D798B /* DWAlertController+DWKeyboard.h in Headers */,
-				6BE8D7ACA5FB41DC1A81F698E8DEB049 /* DWAlertController-umbrella.h in Headers */,
-				06BC34E4370DEDA85AB1E0E6BCBB84F6 /* DWAlertController.h in Headers */,
-				34FA6E7D6D77B34B32E5D4AFF8F13A57 /* DWAlertDismissalAnimationController.h in Headers */,
-				4FF32A52A6530708EE2877E596AD4467 /* DWAlertInternalConstants.h in Headers */,
-				1998663BCDCEC4079F1A96F607FDB408 /* DWAlertPresentationAnimationController.h in Headers */,
-				8AB39146590AE46FC6D0E19E56245B6E /* DWAlertPresentationController.h in Headers */,
-				1B35064E0285DEB60A8DA2D17642B3C8 /* DWAlertView.h in Headers */,
-				E60B6B687728BD197623BE286A9B3F2B /* DWAlertViewActionBaseView.h in Headers */,
-				3DD68DFD362EAAC8CC49151E9E9DC62D /* DWAlertViewActionButton.h in Headers */,
-				BAC17FF9ECF895BEAB1C4574BD60031D /* DWAnimatableShapeLayer.h in Headers */,
-				BDBDD479435A1B14F1EE92C564981C7A /* DWDimmingView.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		429B8BCDFBDA38548E51A1E2004DE032 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B01A5B1FFEDA0E3536E55AC9AEB4591E /* Pods-DWAlertController_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4473AE6B35BEB44B5F9DA32EC5FC5AD6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7625CB8BD9ED40D7F21B64111E4A401C /* DWActionsStackView.h in Headers */,
+				E5F9BBB39A89B928D31156DB27AA72AF /* DWAlertAction+DWProtected.h in Headers */,
+				686B0118F137D8396AEFED78F973A5BE /* DWAlertAction.h in Headers */,
+				A22027476F505AD38C72CDE4125AF111 /* DWAlertAppearanceMode.h in Headers */,
+				3AA8EF9121B2C0347C44C1D1A793A8F3 /* DWAlertController+DWKeyboard.h in Headers */,
+				5FB44C1D7445AA1C6C48B82E7DAC448D /* DWAlertController-umbrella.h in Headers */,
+				4D6C4DEF6D982F1FFA9E530249CB12A4 /* DWAlertController.h in Headers */,
+				87CFCAF0F67EF0725686AB283963423D /* DWAlertDismissalAnimationController.h in Headers */,
+				FAB9B5A1C2DFBF5CB91443C610309AD7 /* DWAlertInternalConstants.h in Headers */,
+				0F99A51DE73577DBB54F1B5684F04FD4 /* DWAlertPresentationAnimationController.h in Headers */,
+				FFD44E52C40767716186E56E73FE1DB9 /* DWAlertPresentationController.h in Headers */,
+				794FAAFCFB5ED27AA8469822D5B33B2A /* DWAlertView.h in Headers */,
+				00D1A40EB01D774AE26A858FF8B74032 /* DWAlertViewActionBaseView.h in Headers */,
+				A619FF5C4E5677CC9D1FD58890F01AC3 /* DWAlertViewActionButton.h in Headers */,
+				F72C47D67112E67BD693CEFB07D03BA8 /* DWAnimatableShapeLayer.h in Headers */,
+				D639B2D739C61D71D7265F0BCA1BB65C /* DWDimmingView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,8 +399,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1BDCA62407FA76D0987D66C99954279 /* Build configuration list for PBXNativeTarget "DWAlertController" */;
 			buildPhases = (
-				14CA66CFDA363CBDFA2C84C24BAD9075 /* Headers */,
-				F3B64975F9F65AD229F6CBDC22866AA1 /* Sources */,
+				4473AE6B35BEB44B5F9DA32EC5FC5AD6 /* Headers */,
+				A86E3810D873F89D95B2DDDF4EE3D7F4 /* Sources */,
 				84674B24242B28BFDBEAC27CC5B35144 /* Frameworks */,
 				45423E66BDB3984B9843FFE62DB7DEC0 /* Resources */,
 			);
@@ -501,31 +474,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A86E3810D873F89D95B2DDDF4EE3D7F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC611DC22C1D0E38A2B0A839096C93D8 /* DWActionsStackView.m in Sources */,
+				C3DF93B48654E9E578CC22307120772D /* DWAlertAction.m in Sources */,
+				85942423FA98DF525E323AB9E316B760 /* DWAlertController+DWKeyboard.m in Sources */,
+				D00BA51C2B2E4C152086C3EEBA323465 /* DWAlertController-dummy.m in Sources */,
+				B46F08E75FA66CECF37346142FF2180C /* DWAlertController.m in Sources */,
+				FA4A19B615201B45C0BE784D21B9FAD2 /* DWAlertDismissalAnimationController.m in Sources */,
+				25FAC9B5348CAADE9A83D2EB26E4AE46 /* DWAlertPresentationAnimationController.m in Sources */,
+				0896EB716820D87C031CD4816F87FAE5 /* DWAlertPresentationController.m in Sources */,
+				0F0C7F3B0F79A4458E3D7949551C2903 /* DWAlertView.m in Sources */,
+				9FDB945C9641994617C447020BB51274 /* DWAlertViewActionBaseView.m in Sources */,
+				49A2595AED5B185D2B3D5EE28EF0CD09 /* DWAlertViewActionButton.m in Sources */,
+				29554524451A084DEB0C9AFE33EA3531 /* DWAnimatableShapeLayer.m in Sources */,
+				B04CCBA297F18A9997338A28794E4948 /* DWDimmingView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BC4E870DEF3B77C0F97BD89D79B09983 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DBA6EFD3449B00D8800E09360DECC519 /* Pods-DWAlertController_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3B64975F9F65AD229F6CBDC22866AA1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2CACD1B3B53BDF9027AF0976F294FB22 /* DWActionsStackView.m in Sources */,
-				4AF6DF78A8465BB900998E8A9542860E /* DWAlertAction.m in Sources */,
-				CF11D96C0AA4343208B8981B18C59B8F /* DWAlertController+DWKeyboard.m in Sources */,
-				3044FA6C905013CF875DC5E15427BAE2 /* DWAlertController-dummy.m in Sources */,
-				868AF9A05E1CD175A49A20327860C0FD /* DWAlertController.m in Sources */,
-				32741970601EF0EDC1B49E1E07DD9F0B /* DWAlertDismissalAnimationController.m in Sources */,
-				A349280D802447233B83B7D269D4273C /* DWAlertPresentationAnimationController.m in Sources */,
-				E11DA3D3E0325FBF5A5173192BB5AB63 /* DWAlertPresentationController.m in Sources */,
-				66ACEFDB33B9E7BB0BAE252C7EF89AC2 /* DWAlertView.m in Sources */,
-				6282A38F987C6BD508E51D788795F686 /* DWAlertViewActionBaseView.m in Sources */,
-				57C7AB0ADB1534173B9AC37581B929E0 /* DWAlertViewActionButton.m in Sources */,
-				6169216B9CFCC999D47BEAE4E52A5078 /* DWAnimatableShapeLayer.m in Sources */,
-				B70F8FD2AAD98FB0127B3834114C87C0 /* DWDimmingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,7 +522,7 @@
 /* Begin XCBuildConfiguration section */
 		2075B07063BFB0E73868209443EB43AE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B218558A9D98008EE2F4087471361294 /* DWAlertController.xcconfig */;
+			baseConfigurationReference = BAD2034A5ACBE1F8D6716F408FA8EA32 /* DWAlertController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -771,7 +744,7 @@
 		};
 		D7CB3CAF263615CE760DFDB7187F7829 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B218558A9D98008EE2F4087471361294 /* DWAlertController.xcconfig */;
+			baseConfigurationReference = BAD2034A5ACBE1F8D6716F408FA8EA32 /* DWAlertController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

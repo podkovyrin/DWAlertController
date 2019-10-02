@@ -15,7 +15,7 @@
 //  limitations under the License.
 //
 
-#import "DWAlertAction+DWProtected.h"
+#import "Private/DWAlertAction+DWProtected.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

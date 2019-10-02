@@ -44,7 +44,7 @@ static float DimmingOpacity(DWAlertAppearanceMode mode) {
 
 - (void)setAppearanceMode:(DWAlertAppearanceMode)appearanceMode {
     _appearanceMode = appearanceMode;
-    
+
     [self updateAppearanceForMode:appearanceMode];
 }
 
@@ -61,7 +61,7 @@ static float DimmingOpacity(DWAlertAppearanceMode mode) {
     self.dimmingView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     self.dimmingView.alpha = 0.0;
     [self.containerView addSubview:self.dimmingView];
-    
+
     DWAlertAppearanceMode appearanceMode = self.appearanceMode;
     if (@available(iOS 12.0, *)) {
         if (appearanceMode == DWAlertAppearanceModeAutomatic) {
@@ -117,7 +117,7 @@ static float DimmingOpacity(DWAlertAppearanceMode mode) {
 
 - (void)traitCollectionDidChange:(nullable UITraitCollection *)previousTraitCollection {
     [super traitCollectionDidChange:previousTraitCollection];
-    
+
     if (@available(iOS 12.0, *)) {
         const UIUserInterfaceStyle style = self.traitCollection.userInterfaceStyle;
         if (self.appearanceMode == DWAlertAppearanceModeAutomatic) {

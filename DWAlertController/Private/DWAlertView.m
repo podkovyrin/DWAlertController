@@ -17,8 +17,8 @@
 
 #import "DWAlertView.h"
 
+#import "../DWAlertAction.h"
 #import "DWActionsStackView.h"
-#import "DWAlertAction.h"
 #import "DWAlertInternalConstants.h"
 #import "DWAlertViewActionButton.h"
 #import "DWDimmingView.h"
@@ -172,7 +172,7 @@ NS_ASSUME_NONNULL_BEGIN
             [contentView.trailingAnchor constraintEqualToAnchor:contentScrollView.trailingAnchor],
             [contentView.widthAnchor constraintEqualToAnchor:self.widthAnchor],
         ]];
-        
+
         if (@available(iOS 12.0, *)) {
             const UIUserInterfaceStyle interfaceStyle = self.traitCollection.userInterfaceStyle;
             [self updateAppearanceForMode:DWAlertAppearanceModeForUIInterfaceStyle(interfaceStyle)];
@@ -266,7 +266,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)traitCollectionDidChange:(nullable UITraitCollection *)previousTraitCollection {
     [super traitCollectionDidChange:previousTraitCollection];
-    
+
     if (@available(iOS 12.0, *)) {
         const UIUserInterfaceStyle style = self.traitCollection.userInterfaceStyle;
         if (self.appearanceMode == DWAlertAppearanceModeAutomatic) {
@@ -332,7 +332,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)setAppearanceMode:(DWAlertAppearanceMode)appearanceMode {
     _appearanceMode = appearanceMode;
-    
+
     [self updateAppearanceForMode:appearanceMode];
 }
 
@@ -468,14 +468,14 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)updateAppearanceForMode:(DWAlertAppearanceMode)appearanceMode {
     UIBlurEffect *blurEffect = DWAlertViewBlurEffect(appearanceMode);
     self.blurEffectView.effect = blurEffect;
-    
+
     UIVibrancyEffect *vibrancyEffect = [UIVibrancyEffect effectForBlurEffect:blurEffect];
     self.vibrancyEffectView.effect = vibrancyEffect;
-    
+
     UIColor *separatorColor = DWAlertViewSeparatorColor(appearanceMode);
     self.contentActionsSeparatorView.backgroundColor = separatorColor;
     self.separatorView.dimmingColor = separatorColor;
-    
+
     self.actionTouchHighlightView.backgroundColor = DWAlertViewActionTouchHighlightColor(appearanceMode);
 }
 

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'DWAlertController'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'A UIAlertController reimplementation with controller containment support.'
 
   s.description      = <<-DESC

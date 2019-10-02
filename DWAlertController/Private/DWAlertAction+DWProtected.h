@@ -1,6 +1,6 @@
 //
 //  Created by Andrew Podkovyrin
-//  Copyright © 2018 Dash Core Group. All rights reserved.
+//  Copyright © 2019 Dash Core Group. All rights reserved.
 //
 //  Licensed under the MIT License (the "License");
 //  you may not use this file except in compliance with the License.
@@ -15,21 +15,13 @@
 //  limitations under the License.
 //
 
-#import <UIKit/UIKit.h>
-
-#import "DWDimmingView.h"
-#import "DWAlertAppearanceMode.h"
+#import "../DWAlertAction.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DWAlertPresentationController : UIPresentationController
+@interface DWAlertAction ()
 
-/**
- Appearance mode of the dimming view
- */
-@property (nonatomic, assign) DWAlertAppearanceMode appearanceMode;
-
-@property (nullable, strong, nonatomic) DWDimmingView *dimmingView;
+@property (nullable, copy, nonatomic) void (^handler)(DWAlertAction *action);
 
 @end
 

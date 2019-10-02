@@ -17,7 +17,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "DWAlertAppearanceMode.h"
+#import "../DWAlertAppearanceMode.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
