@@ -17,7 +17,7 @@
 
 #import "DWAlertView.h"
 
-#import "../DWAlertAction.h"
+#import "DWAlertController/DWAlertAction.h"
 #import "DWActionsStackView.h"
 #import "DWAlertInternalConstants.h"
 #import "DWAlertViewActionButton.h"

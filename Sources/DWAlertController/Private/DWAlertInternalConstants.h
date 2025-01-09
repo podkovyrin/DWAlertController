@@ -20,7 +20,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "../DWAlertAppearanceMode.h"
+#import "DWAlertController/DWAlertAppearanceMode.h"
 
 // Default iOS UIAlertController's constants
 
