@@ -15,7 +15,7 @@
 //  limitations under the License.
 //
 
-#import "DWAlertController.h"
+#import "DWAlertController/DWAlertController.h"
 
 #import "Private/DWAlertAction+DWProtected.h"
 #import "Private/DWAlertController+DWKeyboard.h"

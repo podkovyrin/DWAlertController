@@ -13,7 +13,6 @@ let package = Package(
             targets: ["DWAlertController"]),
     ],
     targets: [
-        .target(name: "DWAlertController",
-                path: "DWAlertController"),
+        .target(name: "DWAlertController"),
     ]
 )

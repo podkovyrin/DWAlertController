@@ -15,7 +15,7 @@
 //  limitations under the License.
 //
 
-#import "../DWAlertController.h"
+#import "DWAlertController/DWAlertController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
